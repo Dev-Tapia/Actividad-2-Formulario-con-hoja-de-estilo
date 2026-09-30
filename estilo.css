@@ -30,5 +30,4 @@ footer {
   padding: 10px;
   border-top: 3px solid #1d3557;
 }
-#seccion-cuenta { display: none; }
-#seccion-cuenta:target { display: block; }
+  
