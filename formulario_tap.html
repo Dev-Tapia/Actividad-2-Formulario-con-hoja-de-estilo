@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro - Dev-Tapia</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Registro de usuarios</h1>
+    <nav>
+      <ul>
+        <li><a href="#seccion-datos">Datos personales</a></li>
+        <li><a href="#seccion-cuenta">Acceso</a></li>
+        <li><button type="button">Ayuda</button></li>
+      </ul>
+    </nav>
+  </header>
+  <form action="#" method="post">
+    <main>
+      <section id="seccion-datos">
+        <h2>Información Personal</h2>
+        <div class="campo">
+          <label for="nom">Nombre</label><br>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+
+        <div class="campo">
+          <label for="ape">Apellido</label><br>
+          <input type="text" id="ape" name="ape" required>
+        </div>
+
+        <div class="campo">
+          <label for="fnac">Fecha de nacimiento</label><br>
+          <input type="date" id="fnac" name="fnac" required>
+        </div>
+
+        <div class="campo">
+          <span class="rotulo">Género</span><br>
+          <label><input type="radio" name="gen" value="M" required> Masculino</label>
+          <label><input type="radio" name="gen" value="F"> Femenino</label>
+          <label><input type="radio" name="gen" value="O"> Otro</label>
+        </div>
+        <h2>Información de Contacto</h2>
+        <div class="campo">
+          <label for="mail">Correo electrónico</label><br>
+          <input type="email" id="mail" name="mail" required>
+        </div>
+
+        <div class="campo">
+          <label for="tel">Teléfono</label><br>
+          <input type="tel" id="tel" name="tel" required>
+        </div>
+
+        <div class="campo">
+          <label for="dir">Dirección</label><br>
+          <textarea id="dir" name="dir" rows="3" cols="30" placeholder="Renato Vega Amador"></textarea>
+        </div>
+      </section>
+      <section id="seccion-cuenta">
+        <h2>Información de Cuenta</h2>
+        <div class="campo">
+          <label for="user">Nombre de usuario</label><br>
+          <input type="text" id="user" name="user" required>
+        </div>
+
+        <div class="campo">
+          <label for="pass1">Contraseña</label><br>
+          <input type="password" id="pass1" name="pass1" required>
+        </div>
+
+        <div class="campo">
+          <label for="pass2">Confirmar contraseña</label><br>
+          <input type="password" id="pass2" name="pass2" required>
+        </div>
+        <h2>Preferencias</h2>
+        <div class="campo">
+          <label for="fav">Color favorito</label><br>
+          <select id="fav" name="fav">
+            <option value="rojo">Rojo</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="amarillo">Amarillo</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label><input type="checkbox" name="acepto" required> Acepto los términos y condiciones</label>
+        </div>
+        <button type="submit">Crear mi cuenta</button>
+      </section>
+    </main>
+  </form>
+  <footer>
+    <p>Rafael de Jesús Tapia Beltrán · Grupo 2-5</p>
+  </footer>
+</body>
+</html>
